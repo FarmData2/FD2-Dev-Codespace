@@ -2,7 +2,7 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    //"remoteUser": "fd2dev",
+    "remoteUser": "fd2dev",
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
