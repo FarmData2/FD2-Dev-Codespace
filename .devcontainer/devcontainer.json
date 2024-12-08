@@ -3,9 +3,9 @@
         "dockerfile": "Dockerfile"
     },
     "remoteUser": "fd2dev",
-    "workspaceFolder": "/home/fd2dev",
+    "workspaceFolder": "/workspaces/fd2dev",
     "features": {
-        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     }
 }
   
