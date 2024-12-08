@@ -3,7 +3,8 @@
         "dockerfile": "Dockerfile"
     },
     "remoteUser": "fd2dev",
-    "workspaceFolder": "/home/fd2dev",
+    "workspaceFolder": "${localWorkspaceFolder}",
+    "workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind",
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
