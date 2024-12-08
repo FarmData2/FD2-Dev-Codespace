@@ -25,6 +25,11 @@ RUN useradd \
 USER $USERNAME
 WORKDIR /home/$USERNAME
 
+# Copy the postStart script into the container and make it executable.
+# This is run by the devcontainer.json file.
+COPY postStart.bash ./postStart.bash
+RUN chmod +x ./postStart.bash
+
 # Do some basic git configuration.
 RUN git config --global credential.helper store \
  && git config --global merge.conflictstyle diff3 \
