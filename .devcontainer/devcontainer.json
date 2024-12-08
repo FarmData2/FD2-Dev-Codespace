@@ -4,7 +4,7 @@
     },
     "remoteUser": "fd2dev",
     "workspaceFolder": "/home/fd2dev",
-    "workspaceMount": "source=/home/fd2dev,target=/home/fd2dev,type=bind"
+    "workspaceMount": "source=/home/fd2dev,target=/home/fd2dev,type=bind",
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
