@@ -8,7 +8,9 @@
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     "mounts": [
-        "type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock"
+        "type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock",
+        "type=bind,source=/home/fd2dev/FarmData2,target=/home/fd2dev/FarmData2",
+        "type=bind,source=/home/fd2dev/.fd2,target=/home/fd2dev/.fd2"
     ]
 }
   
