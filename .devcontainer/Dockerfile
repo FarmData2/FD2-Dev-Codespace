@@ -25,11 +25,6 @@ RUN useradd \
 USER $USERNAME
 WORKDIR /home/$USERNAME
 
-# Copy the postStart script into the container and make it executable.
-# This is run by the devcontainer.json file.
-COPY --chown=$USERNAME:$USERNAME ./postStart.bash ./postStart.bash
-RUN chmod +x ./postStart.bash
-
 # Do some basic git configuration.
 RUN git config --global credential.helper store \
  && git config --global merge.conflictstyle diff3 \
@@ -42,8 +37,14 @@ RUN git config --global credential.helper store \
  && echo "" >> .bashrc \
  && echo "source /usr/share/bash-completion/completions/git" >> .bashrc
 
-# Stuff to reduce image size.
 USER root
+
+# Copy the postStart script into the container and make it executable.
+# This is run by the devcontainer.json file.
+COPY --chown=$USERNAME:$USERNAME ./postStart.bash ./postStart.bash
+RUN chmod +x ./postStart.bash
+
+# Stuff to reduce image size.
 RUN apt-get clean -y \
  && apt-get autoclean -y \
  && apt-get autoremove -y \
