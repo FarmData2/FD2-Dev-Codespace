@@ -1,4 +1,5 @@
 {
+    "remoteUser": "fd2dev",
     "build": {
         "dockerfile": "Dockerfile"
     },
