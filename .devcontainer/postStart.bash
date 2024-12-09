@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "fd2dev" | sudo chgrp docker /var/run/docker.sock
+echo "fd2dev" | sudo -S chgrp docker /var/run/docker.sock
