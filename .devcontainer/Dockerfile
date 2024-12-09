@@ -51,4 +51,4 @@ RUN apt-get clean -y \
  && rm -rf /var/lib/apt/lists/*
 
 USER $USERNAME
-WORKDIR /home/$USERNAME
+WORKDIR /workspaces
