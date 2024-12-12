@@ -3,7 +3,13 @@
     "customizations": {
         "vscode": {
             "settings": {
-                "explorer.autoReveal": false
+                "workbench.startupEditor": "none",
+                "workbench.activityBar.location": "hidden",
+                "workbench.statusBar.visible": false,
+                "window.commandCenter": false,
+                "window.menuBarVisibility": "hidden",
+                "workbench.editor.restoreViewState": false,
+                "workbench.editor.showTabs": "none"
             }
         }
     }
