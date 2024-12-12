@@ -1,17 +1,18 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/base:debian",
-    "customizations": {
-        "vscode": {
-            "settings": {
-                "workbench.startupEditor": "none",
-                "workbench.activityBar.location": "hidden",
-                "workbench.statusBar.visible": false,
-                "window.commandCenter": false,
-                "window.menuBarVisibility": "hidden",
-                "workbench.editor.restoreViewState": false,
-                "workbench.editor.showTabs": "none"
-            }
-        }
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "workbench.startupEditor": "none",
+        "workbench.activityBar.location": "hidden",
+        "workbench.statusBar.visible": false,
+        "window.commandCenter": false,
+        "window.menuBarVisibility": "hidden",
+        "workbench.editor.restoreViewState": false,
+        "workbench.editor.editorActionsLocation": "hidden",
+        "workbench.editor.showTabs": "none",
+        "workbench.layoutControl.enabled": false
+      }
     }
+  }
 }
-  
