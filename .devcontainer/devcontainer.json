@@ -3,20 +3,23 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "tasks": [
-          {
-            "label": "TestTask",
-            "type": "shell",
-            "command": "echo 'hello world!'",
-            "runOptions": {
-              "runOn": "folderOpen"
-            },
-            "presentation": {
-              "reveal": "always",
-              "panel": "new"
+        "tasks": {
+          "version": "2.0.0",
+          "tasks.json": [
+            {
+              "label": "TestTask",
+              "type": "shell",
+              "command": "echo 'hello world!'",
+              "runOptions": {
+                "runOn": "folderOpen"
+              },
+              "presentation": {
+                "reveal": "always",
+                "panel": "new"
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     }
   }
