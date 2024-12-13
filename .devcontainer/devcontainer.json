@@ -1,41 +1,23 @@
 {
   "image": "mcr.microsoft.com/devcontainers/base:debian",
-  // "features": {
-  //   "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-  //   "ghcr.io/shinepukur/devcontainer-features/vale:1": {}
-  // },
   "customizations": {
     "vscode": {
       "settings": {
-        // "workbench.startupEditor": "none",
-        // "workbench.activityBar.location": "hidden",
-        // "workbench.statusBar.visible": false,
-        // "window.commandCenter": false,
-        // "window.menuBarVisibility": "hidden",
-        // "workbench.editor.restoreViewState": false,
-        // "workbench.editor.editorActionsLocation": "hidden",
-        // "workbench.editor.showTabs": "none",
-        // "workbench.layoutControl.enabled": false,
-        // "workbench.panel.opensMaximized": "always",
         "tasks": [
           {
-            "label": "Test",
+            "label": "TestTask",
             "type": "shell",
-            "command": "echo 'hello world!'"
+            "command": "echo 'hello world!'",
+            "runOptions": {
+              "runOn": "folderOpen"
+            },
+            "presentation": {
+              "reveal": "always",
+              "panel": "new"
+            }
           }
         ]
       }
-      // "extensions": [
-      //   // Install extensions so that we hide the prompt to install.
-      //   "Vue.volar",
-      //   "streetsidesoftware.code-spell-checker",
-      //   "dbaeumer.vscode-eslint",
-      //   "esbenp.prettier-vscode",
-      //   "bierner.markdown-preview-github-styles",
-      //   "timonwong.shellcheck",
-      //   "mkhl.shfmt",
-      //   "chrischinchilla.vale-vscode"
-      // ]
     }
   }
 }
