@@ -5,7 +5,7 @@
       "settings": {
         "tasks": {
           "version": "2.0.0",
-          "tasks.json": [
+          "tasks": [
             {
               "label": "TestTask",
               "type": "shell",
